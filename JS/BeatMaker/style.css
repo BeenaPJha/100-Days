@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'David Libre', serif;
+}
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    margin: 50px 0px 50px 0px;
+    font-size: 40px;
+}
+
+header p{
+    font-size: 20px;
+}
+
+.taps{
+    width: 100%;
+    background: cyan;
+    display: flex;
+}
+
+.taps > div {
+    height: 100px;
+    width: 100px;
+    flex: 1; /* stretches the flexbox items in the availble space */
+}
+
+.tap1{
+    background: #ada4ad;
+}
+
+.tap2{
+    background: #56d605;
+}
+
+.tap3{
+    background: #503000;
+}
+
+.tap4{
+    background: #7C4C7C;
+}
+
+.tap5{
+    background: #404E0D;
+
+}
+
+.tap6{
+    background: #0d2463;
+}
+
+.visuals > div{
+    position: absolute;
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left:20%;
+    bottom: 0%;
+    z-index: -1;    
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%
+    }
+}
+
+.visuals > div{
+    position: absolute;
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+}
