@@ -1,0 +1,40 @@
+body{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-size:30px;
+}
+
+button{
+    margin: 5px;
+    background-color: #b23134;
+    color:white;
+}
+#wrapper{
+    display: grid;
+    grid-template-rows: 2fr;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    height: 50%;
+}
+#display-data{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    font-size:30px;
+}
+#entry{
+    background-color: #4d4c52;
+    color:white;
+    padding: 2px;
+    margin: 0px;
+}
+
+#del{
+    text-decoration: none;
+}
+.done{
+    text-decoration: line-through;
+    width: 5px;
+}
