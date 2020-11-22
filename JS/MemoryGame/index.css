@@ -1,0 +1,58 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, rgb(35, 153, 254), rgb(253, 207, 250));
+    display: flex;
+}
+
+.memory-container{
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    margin: auto;
+    border: 2px solid green;
+    perspective: 1000px;
+
+}
+
+.memorycard-container{
+    /* border: 2px solid yellowgreen ; */
+    width: calc(25% - 10px);
+    height: calc(33.33% - 10px);
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+
+}
+
+.memorycard-container :active{
+    transform: scale(.97);
+    transition: transform .2s;
+}
+
+.memorycard-container.flip{
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgb(35, 153, 254);
+    backface-visibility: hidden;
+}
+
+.front-face{
+    transform: rotateY(180deg);
+}
